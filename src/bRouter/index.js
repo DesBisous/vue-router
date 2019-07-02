@@ -11,7 +11,7 @@ class KRouter {
   $options = null; // 存储 路由 实例化时的数据
   routeMap = {}; // 存储路由对象映射
   fallback = false; // 判断是否支持 PushState，如果不支持则需要回退为 hash，默认为 false ，表示不需要回退，支持 PushState
-  mode = "hash"; // 判断旅游类型
+  mode = "hash"; // 判断路由类型
   app = null; // 存储当前路由，词用一个 vue 实例属性来保存当前路由，目的是为了利用 vue 已做好的响应式机制，来触发 render 重新执行
 
   static install(_Vue) {
